@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0", // VS Code 작업 설정 버전
+    "tasks": [
+        {
+            "label": "Build Bounce (Debug)", // 작업 이름 (메뉴/명령 팔레트에 표시됨)
+            "type": "shell",    // 실행 방식: 터미널에서 셸 명령 실행
+            "command":"cmake",  // 실행할 명령어
+            "args": ["--build","Build","--config","Debug","-j"], // 명령어 인자들
+            "group": {
+                "kind": "build",    // 빌드 작업 그룹에 속함
+                "isDefault":true    // 기본 빌드 작업으로 지정
+        }
+        }
+    ]
+}
